@@ -1,0 +1,3327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trinity Builders and Developers — Building Spaces. Creating Legacies.</title>
+  <meta name="description"
+    content="Trinity Builders and Developers — engineer-led residential, villa, interior, commercial construction and site engineering in Kerala." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#110F0D" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Trinity Builders and Developers | Kerala Construction & Architecture" />
+  <meta property="og:description"
+    content="Engineer-led residential, villa, commercial construction, interiors and site engineering by Trinity Builders and Developers in Kerala." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Archivo:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ink: #110F0D;
+      --ink-2: #1D1915;
+      --paper: #EDE7DC;
+      --paper-2: #E1D8C7;
+      --sand: #C6B99F;
+      --bronze: #A07C42;
+      --line: rgba(17, 15, 13, .15);
+      --line-l: rgba(237, 231, 220, .16);
+      --fd: "Marcellus", Georgia, serif;
+      --fb: "Archivo", system-ui, sans-serif;
+      --fm: "IBM Plex Mono", ui-monospace, monospace;
+      --gut: clamp(20px, 5vw, 78px);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--fb);
+      font-weight: 300;
+      font-size: clamp(15px, 1.04vw, 17px);
+      line-height: 1.6;
+      overflow-x: hidden
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+ 
+
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+      color: inherit
+    }
+
+    ::selection {
+      background: var(--bronze);
+      color: var(--paper)
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--bronze);
+      outline-offset: 3px
+    }
+
+    .h1 {
+      font-family: var(--fd);
+      font-weight: 400;
+      font-size: clamp(2.7rem, 8.6vw, 7rem);
+      line-height: .94;
+      letter-spacing: -.012em
+    }
+
+    .h2 {
+      font-family: var(--fd);
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.04
+    }
+
+    .h3 {
+      font-family: var(--fd);
+      font-weight: 400;
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      line-height: 1.14;
+      margin: 0
+    }
+
+    .lead {
+      font-size: clamp(1rem, 1.45vw, 1.24rem);
+      line-height: 1.56;
+      max-width: 47ch;
+      font-weight: 300
+    }
+
+    .mono {
+      font-family: var(--fm);
+      font-size: .67rem;
+      letter-spacing: .17em;
+      text-transform: uppercase
+    }
+
+    .dim {
+      opacity: .55
+    }
+
+    .wrap {
+      width: min(1400px, 100% - var(--gut)*2);
+      margin-inline: auto
+    }
+
+    .wrap-n {
+      width: min(1080px, 100% - var(--gut)*2);
+      margin-inline: auto
+    }
+
+    .rule {
+      height: 1px;
+      background: var(--line)
+    }
+
+    section {
+      position: relative;
+      padding-block: clamp(84px, 11vw, 168px)
+    }
+
+    .mask {
+      display: block;
+      overflow: hidden
+    }
+
+    .mask>span {
+      display: block
+    }
+
+    .up {
+      opacity: 0;
+      transform: translateY(24px)
+    }
+
+    .reduce .up {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ---------- nav ---------- */
+    header {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 120;
+      padding: 16px var(--gut);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform .55s cubic-bezier(.4, 0, .2, 1), background .4s, color .4s, border-color .4s;
+      border-bottom: 1px solid transparent
+    }
+
+    header.hide {
+      transform: translateY(-115%)
+    }
+
+    header.solid {
+      background: rgba(237, 231, 220, .88);
+      backdrop-filter: blur(12px);
+      border-bottom-color: var(--line)
+    }
+
+    header.dark {
+      color: var(--paper)
+    }
+
+    header.dark.solid {
+      background: rgba(17, 15, 13, .84);
+      border-bottom-color: var(--line-l)
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 7px
+    }
+    .brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+    transform: translateY(10px);
+}
+
+    .brand b {
+      font-family: var(--fd);
+      font-weight: 400;
+      font-size: 1.15rem
+    }
+
+    .brand i {
+      font-style: normal;
+      font-family: var(--fm);
+      font-size: .58rem;
+      letter-spacing: .22em;
+      opacity: .6
+    }
+
+    nav.links {
+      display: flex;
+      gap: 28px;
+      align-items: center
+    }
+
+    nav.links a {
+      font-family: var(--fm);
+      font-size: .66rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      position: relative;
+      padding-block: 5px
+    }
+
+    nav.links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background: currentColor;
+      transition: width .45s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    nav.links a:hover::after {
+      width: 100%
+    }
+
+    .cta {
+      border: 1px solid currentColor;
+      padding: 9px 17px
+    }
+
+    .burger {
+      display: none;
+      width: 38px;
+      height: 38px;
+      border: 1px solid currentColor;
+      background: none;
+      cursor: pointer;
+      position: relative
+    }
+
+    .burger i {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+      background: currentColor;
+      transition: .35s
+    }
+
+    .burger i:first-child {
+      top: 15px
+    }
+
+    .burger i:last-child {
+      bottom: 15px
+    }
+
+    body.open .burger i:first-child {
+      transform: translateY(3.5px) rotate(45deg)
+    }
+
+    body.open .burger i:last-child {
+      transform: translateY(-3.5px) rotate(-45deg)
+    }
+
+    @media(max-width:960px) {
+      nav.links {
+        display: none
+      }
+
+      .burger {
+        display: block
+      }
+    }
+
+    #menu {
+      position: fixed;
+      inset: 0;
+      z-index: 110;
+      background: var(--ink);
+      color: var(--paper);
+      padding: var(--gut);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      clip-path: inset(0 0 100% 0);
+      transition: clip-path .85s cubic-bezier(.76, 0, .24, 1)
+    }
+
+    body.open #menu {
+      clip-path: inset(0 0 0 0)
+    }
+
+    #menu a {
+      font-family: var(--fd);
+      font-size: clamp(2rem, 9vw, 3.4rem);
+      line-height: 1.16;
+      opacity: 0;
+      transform: translateY(22px);
+      transition: .55s
+    }
+
+    body.open #menu a {
+      opacity: 1;
+      transform: none
+    }
+
+    /* ---------- hero: slat reveal ---------- */
+    #hero {
+      padding: 0;
+      height: 100svh;
+      overflow: hidden;
+      background: var(--ink);
+      color: var(--paper);
+      display: flex;
+      align-items: flex-end
+    }
+
+    .slats {
+      position: absolute;
+      inset: 0;
+      display: flex
+    }
+
+    .slat {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+      will-change: transform
+    }
+
+    .slat .in {
+      position: absolute;
+      inset: 0
+    }
+
+    .slat img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(.22) contrast(1.05) brightness(.78)
+    }
+
+    .slat+.slat .in {
+      border-left: 1px solid rgba(237, 231, 220, .09)
+    }
+
+    .hero-veil {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(17, 15, 13, .62), rgba(17, 15, 13, .15) 42%, rgba(17, 15, 13, .86))
+    }
+
+    .hero-body {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      padding: 0 var(--gut) clamp(28px, 5vw, 60px)
+    }
+
+    .hero-top {
+      position: absolute;
+      top: clamp(88px, 12vh, 130px);
+      left: var(--gut);
+      right: var(--gut);
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .hero-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line-l);
+      padding-top: 20px;
+      margin-top: clamp(22px, 4vw, 38px)
+    }
+
+    .hero-foot p {
+      margin: 0;
+      max-width: 40ch;
+      opacity: .82
+    }
+
+    .cue {
+      display: flex;
+      align-items: center;
+      gap: 11px
+    }
+
+    .cue .b {
+      width: 1px;
+      height: 46px;
+      background: currentColor;
+      opacity: .28;
+      overflow: hidden;
+      position: relative
+    }
+
+    .cue .b::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: currentColor;
+      animation: cue 2.1s infinite cubic-bezier(.7, 0, .3, 1)
+    }
+
+    @keyframes cue {
+      0% {
+        transform: translateY(-100%)
+      }
+
+      55%,
+      100% {
+        transform: translateY(100%)
+      }
+    }
+
+    /* ---------- intro statement ---------- */
+    #statement {
+      background: var(--paper)
+    }
+
+    .stmt {
+      font-family: var(--fd);
+      font-size: clamp(1.6rem, 4.1vw, 3.3rem);
+      line-height: 1.22;
+      max-width: 20ch;
+      margin: 0
+    }
+
+    .stmt b {
+      font-weight: 400;
+      color: rgba(17, 15, 13, .2);
+      transition: color .4s
+    }
+
+    .stmt b.on {
+      color: var(--ink)
+    }
+
+    .stmt-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: clamp(24px, 5vw, 70px);
+      align-items: end
+    }
+
+    @media(max-width:860px) {
+      .stmt-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* ---------- BUILD SEQUENCE (signature) ---------- */
+    #build {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 0
+    }
+
+    #build .stage {
+      height: 100svh;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      align-items: center;
+      gap: clamp(20px, 4vw, 60px);
+      padding: clamp(80px, 10vh, 110px) var(--gut) clamp(40px, 6vh, 70px)
+    }
+
+    @media(max-width:900px) {
+      #build .stage {
+        grid-template-columns: 1fr;
+        align-content: center;
+        gap: 14px
+      }
+    }
+
+    .bs-copy {
+      position: relative;
+      z-index: 3;
+      max-width: 46ch
+    }
+
+    .bs-k {
+      color: var(--bronze);
+      margin-bottom: 14px;
+      display: block
+    }
+
+    .bs-t {
+      font-family: var(--fd);
+      font-size: clamp(1.7rem, 3.6vw, 2.9rem);
+      line-height: 1.08;
+      margin: 0 0 14px
+    }
+
+    .bs-d {
+      margin: 0;
+      opacity: .72;
+      max-width: 40ch;
+      font-size: clamp(.92rem, 1.2vw, 1.05rem)
+    }
+
+    .bs-swap {
+      will-change: transform, opacity
+    }
+
+    .bs-rail {
+      display: flex;
+      gap: 6px;
+      margin-top: clamp(20px, 3vw, 34px)
+    }
+
+    .bs-rail i {
+      height: 2px;
+      flex: 1;
+      background: var(--line-l);
+      position: relative;
+      overflow: hidden
+    }
+
+    .bs-rail i::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--bronze);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .45s
+    }
+
+    .bs-rail i.on::after {
+      transform: scaleX(1)
+    }
+
+    .bs-svg {
+      position: relative;
+      z-index: 2
+    }
+
+    @media(max-width:900px) {
+      .bs-svg {
+        order: -1
+      }
+    }
+
+    .bs-svg svg {
+      width: 100%;
+      height: auto;
+      overflow: visible;
+      max-height: 52svh
+    }
+
+    .bs-svg [data-g] path,
+    .bs-svg [data-g] line,
+    .bs-svg [data-g] rect,
+    .bs-svg [data-g] polyline {
+      fill: none;
+      stroke: var(--paper);
+      stroke-width: 1.2;
+      vector-effect: non-scaling-stroke;
+      stroke-linejoin: miter;
+      stroke-linecap: square
+    }
+
+    .bs-svg [data-g].hot path,
+    .bs-svg [data-g].hot rect,
+    .bs-svg [data-g].hot line {
+      stroke: var(--bronze)
+    }
+
+    .bs-svg .fillp {
+      fill: rgba(237, 231, 220, .07);
+      stroke: var(--paper)
+    }
+
+    .bs-svg .thin {
+      stroke-width: .65;
+      opacity: .45
+    }
+
+    .bs-svg .hatch {
+      stroke-width: .5;
+      opacity: .3
+    }
+
+    .bs-svg text {
+      font-family: var(--fm);
+      font-size: 10px;
+      letter-spacing: .15em;
+      fill: var(--paper);
+      opacity: .5
+    }
+
+    .bs-count {
+      position: absolute;
+      right: var(--gut);
+      top: clamp(80px, 11vh, 120px);
+      z-index: 4;
+      font-family: var(--fm);
+      font-size: .68rem;
+      letter-spacing: .18em;
+      opacity: .5
+    }
+
+    @media(max-width:900px) {
+      .bs-count {
+        display: none
+      }
+    }
+
+    /* ---------- projects: editorial showcase ---------- */
+    #projects {
+      background: var(--paper);
+      padding-top: clamp(70px, 9vw, 130px);
+      padding-bottom: clamp(70px, 9vw, 130px);
+      position: relative;
+      overflow: hidden
+    }
+
+    .proj-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: clamp(32px, 4vw, 52px);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px
+    }
+
+    .proj-cats {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center
+    }
+
+    .cat-btn {
+      background: transparent;
+      border: 1px solid var(--line);
+      padding: 8px 18px;
+      font-family: var(--fm);
+      font-size: .65rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all .35s cubic-bezier(.4, 0, .2, 1);
+      border-radius: 2px;
+      opacity: .65
+    }
+
+    .cat-btn:hover {
+      opacity: 1;
+      border-color: var(--bronze);
+      color: var(--bronze)
+    }
+
+    .cat-btn.active {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+      opacity: 1
+    }
+
+    .cat-btn .cnt {
+      font-size: .58rem;
+      opacity: .6;
+      margin-left: 4px
+    }
+
+    .proj-viewport {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-block: 10px;
+      touch-action: pan-x;
+      -webkit-overflow-scrolling: touch
+    }
+
+    .proj-viewport::-webkit-scrollbar {
+      display: none
+    }
+
+    .proj-track {
+      display: flex;
+      gap: clamp(24px, 3.5vw, 48px);
+      will-change: transform
+    }
+
+    .proj-card {
+      flex: 0 0 clamp(320px, 42vw, 660px);
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: transform .5s cubic-bezier(.25, 1, .5, 1), border-color .4s, box-shadow .4s;
+      overflow: hidden
+    }
+
+    .proj-card:hover {
+      border-color: var(--bronze);
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -15px rgba(17, 15, 13, .12)
+    }
+
+    .proj-card .im-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: #110F0D
+    }
+
+    .proj-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform .8s cubic-bezier(.25, 1, .5, 1), filter .5s;
+      filter: grayscale(.1) contrast(1.03)
+    }
+
+    .proj-card:hover img {
+      transform: scale(1.06);
+      filter: grayscale(0) contrast(1.05)
+    }
+
+    .proj-card .card-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 2;
+      background: rgba(17, 15, 13, .88);
+      backdrop-filter: blur(8px);
+      color: var(--paper);
+      font-family: var(--fm);
+      font-size: .6rem;
+      letter-spacing: .16em;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      border-left: 2px solid var(--bronze)
+    }
+
+    .proj-card .card-num {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 2;
+      font-family: var(--fm);
+      font-size: .65rem;
+      color: var(--paper);
+      background: rgba(17, 15, 13, .65);
+      backdrop-filter: blur(4px);
+      padding: 4px 10px
+    }
+
+    .proj-card .card-body {
+      padding: clamp(20px, 2.4vw, 32px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      background: var(--paper-2)
+    }
+   /* Construction & Site Progress — image only */
+
+
+    .proj-card .card-title {
+      font-family: var(--fd);
+      font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+      line-height: 1.15;
+      margin: 0 0 10px 0;
+      color: var(--ink);
+      transition: color .3s
+    }
+
+    .proj-card:hover .card-title {
+      color: var(--bronze)
+    }
+
+    .proj-card .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-family: var(--fm);
+      font-size: .63rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: .75
+    }
+
+    .proj-card .view-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--bronze);
+      font-weight: 500;
+      transition: gap .3s
+    }
+
+    .proj-card:hover .view-link {
+      gap: 10px
+    }
+
+    /* Horizontal scroll indicators */
+    .proj-scroll-hint {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-family: var(--fm);
+      font-size: .63rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity: .6
+    }
+
+    .proj-nav-btns {
+      display: flex;
+      gap: 12px
+    }
+
+    .proj-nav-btn {
+      background: none;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all .3s
+    }
+
+    .proj-nav-btn:hover {
+      border-color: var(--bronze);
+      color: var(--bronze);
+      background: rgba(160, 124, 66, .08)
+    }
+
+    /* ---------- services ---------- */
+    #services {
+      background: var(--paper-2)
+    }
+
+    .srv {
+      border-top: 1px solid var(--line)
+    }
+
+    .srv-i {
+      display: grid;
+      grid-template-columns: 44px 1fr auto;
+      gap: clamp(12px, 2.4vw, 34px);
+      align-items: center;
+      padding: clamp(18px, 2.4vw, 30px) 0;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+      transition: padding-left .5s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .srv-i:hover {
+      padding-left: 12px
+    }
+
+    .srv-i .n {
+      font-family: var(--fm);
+      font-size: .64rem;
+      opacity: .45
+    }
+
+    .srv-i p {
+      margin: 5px 0 0;
+      opacity: .7;
+      font-size: .94rem;
+      max-width: 56ch
+    }
+
+    .srv-i .plus {
+      width: 15px;
+      height: 15px;
+      position: relative;
+      opacity: .4
+    }
+
+    .srv-i .plus::before,
+    .srv-i .plus::after {
+      content: "";
+      position: absolute;
+      background: currentColor
+    }
+
+    .srv-i .plus::before {
+      left: 0;
+      right: 0;
+      top: 7px;
+      height: 1px
+    }
+
+    .srv-i .plus::after {
+      top: 0;
+      bottom: 0;
+      left: 7px;
+      width: 1px
+    }
+
+    .srv-i::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      width: 0;
+      background: var(--ink);
+      transition: width .6s cubic-bezier(.4, 0, .2, 1)
+    }
+
+    .srv-i:hover::after {
+      width: 100%
+    }
+
+    /* ---------- founder ---------- */
+    #founder {
+      background: var(--ink);
+      color: var(--paper);
+      overflow: hidden
+    }
+
+    .fd-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: clamp(28px, 6vw, 90px);
+      align-items: center
+    }
+    .frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+    @media(max-width:900px) {
+      .fd-grid {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .frame {
+      aspect-ratio: 3/4;
+      border: 1px solid var(--line-l);
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: repeating-linear-gradient(0deg, transparent 0 33px, var(--line-l) 33px 34px),
+        repeating-linear-gradient(90deg, transparent 0 33px, var(--line-l) 33px 34px)
+    }
+
+    .frame .x::before,
+    .frame .x::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-top: 1px solid var(--line-l);
+      transform-origin: center
+    }
+
+    .frame .x::before {
+      transform: rotate(30deg) scaleX(1.7)
+    }
+
+    .frame .x::after {
+      transform: rotate(-30deg) scaleX(1.7)
+    }
+
+    .frame .lb {
+      position: relative;
+      background: var(--ink);
+      padding: 10px 14px;
+      text-align: center
+    }
+
+    .fq {
+      font-family: var(--fd);
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      line-height: 1.24;
+      margin: 0 0 28px;
+      max-width: 21ch
+    }
+
+    .fq .mask>span {
+      opacity: .18
+    }
+
+    .sig {
+      font-family: var(--fd);
+      font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+      border-bottom: 1px solid var(--line-l);
+      padding-bottom: 8px;
+      display: inline-block;
+      margin-top: 26px
+    }
+
+    /* ---------- figures ---------- */
+    .fig-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line)
+    }
+
+    @media(max-width:760px) {
+      .fig-row {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    .fig {
+      background: var(--paper);
+      padding: clamp(22px, 3.2vw, 42px)
+    }
+
+    .fig b {
+      display: block;
+      font-family: var(--fd);
+      font-weight: 400;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1
+    }
+
+    .fig span {
+      display: block;
+      margin-top: 9px
+    }
+
+    /* ---------- contact ---------- */
+    .ct {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(30px, 6vw, 88px)
+    }
+
+    @media(max-width:900px) {
+      .ct {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .field {
+      border-bottom: 1px solid var(--line);
+      padding: 13px 0
+    }
+
+    .field label {
+      display: block;
+      font-family: var(--fm);
+      font-size: .61rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      opacity: .5;
+      margin-bottom: 6px
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      background: none;
+      border: 0;
+      padding: 0;
+      outline: none;
+      font-size: 1rem;
+      font-weight: 300
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 74px
+    }
+
+    .field.bad {
+      border-bottom-color: #8A3A29
+    }
+
+    .err {
+      display: none;
+      color: #8A3A29;
+      font-family: var(--fm);
+      font-size: .59rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-top: 6px
+    }
+
+    .field.bad .err {
+      display: block
+    }
+
+    .btn {
+      margin-top: 32px;
+      background: var(--ink);
+      color: var(--paper);
+      border: 1px solid var(--ink);
+      padding: 16px 32px;
+      cursor: pointer;
+      font-family: var(--fm);
+      font-size: .67rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      transition: color .45s
+    }
+
+    .btn span {
+      position: relative;
+      z-index: 2
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--paper);
+      transform: translateY(101%);
+      transition: transform .5s cubic-bezier(.76, 0, .24, 1)
+    }
+
+    .btn:hover {
+      color: var(--ink)
+    }
+
+    .btn:hover::before {
+      transform: none
+    }
+
+    .sent {
+      display: none;
+      border: 1px solid var(--ink);
+      padding: 28px;
+      margin-top: 26px
+    }
+
+    .sent.on {
+      display: block
+    }
+
+    .cl {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    footer {
+      background: var(--ink);
+      color: var(--paper);
+      padding: clamp(48px, 7vw, 88px) var(--gut) 28px;
+      overflow: hidden
+    }
+
+    .f-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line-l)
+    }
+
+    .f-mark {
+      font-family: var(--fd);
+      font-size: clamp(3rem, 14vw, 10rem);
+      line-height: .85;
+      margin-top: 36px;
+      white-space: nowrap
+    }
+    .f-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.f-logo img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  vertical-align: middle;
+  transform: translate(50px, -8px);
+  
+  
+
+}
+
+    .f-bot {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      opacity: .55
+    }
+
+    /* ---------- modal ---------- */
+    #modal {
+      position: fixed;
+      inset: 0;
+      z-index: 150;
+      display: none
+    }
+
+    #modal.on {
+      display: block
+    }
+
+    #modal .veil {
+      position: absolute;
+      inset: 0;
+      background: rgba(8, 7, 6, .7);
+      opacity: 0;
+      transition: .45s;
+      backdrop-filter: blur(3px)
+    }
+
+    #modal.in .veil {
+      opacity: 1
+    }
+
+    #modal .panel {
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: min(600px, 100%);
+      background: var(--paper);
+      overflow-y: auto;
+      padding: var(--gut);
+      transform: translateX(100%);
+      transition: transform .68s cubic-bezier(.76, 0, .24, 1)
+    }
+
+    #modal.in .panel {
+      transform: none
+    }
+
+    #modal .close {
+      margin-left: auto;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--line);
+      background: none;
+      cursor: pointer
+    }
+
+    #modal .mi {
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      margin: 14px 0 24px;
+      background: var(--paper-2)
+    }
+
+    #modal .mi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .spec {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 9px 22px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      margin-top: 24px
+    }
+
+    .spec dt {
+      font-family: var(--fm);
+      font-size: .62rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      opacity: .55
+    }
+
+    .spec dd {
+      margin: 0
+    }
+
+    /* ---------- image fallback ---------- */
+    .ph {
+      position: absolute;
+      inset: 0
+    }
+
+    .ph.miss {
+      background: repeating-linear-gradient(90deg, #B5A489 0 76px, #A8967B 76px 78px),
+        repeating-linear-gradient(0deg, #B5A489 0 36px, #A29079 36px 38px);
+      display: flex;
+      align-items: flex-end;
+      padding: 12px
+    }
+
+    .ph.miss img {
+      display: none
+    }
+
+    .ph.miss::after {
+      content: "Image placeholder";
+      font-family: var(--fm);
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: #37302A
+    }
+
+    .rel {
+      position: relative
+    }
+
+    #cur {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--bronze);
+      z-index: 190;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: width .3s, height .3s;
+      mix-blend-mode: difference
+    }
+
+    @media(hover:none), (max-width:1024px) {
+      #cur {
+        display: none
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important
+      }
+
+      .up {
+        opacity: 1 !important;
+        transform: none !important
+      }
+    }
+
+    /* ---------- project detail / portfolio refinement ---------- */
+    .proj-card {
+      border-radius: 2px;
+      isolation: isolate;
+    }
+
+    .proj-card:focus-visible {
+      outline: 2px solid var(--bronze);
+      outline-offset: 4px;
+    }
+
+    .proj-card .im-wrap {
+      aspect-ratio: 16/10;
+    }
+
+    .proj-card .im-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(17, 15, 13, .06), transparent 38%, rgba(17, 15, 13, .18));
+      opacity: .75;
+      pointer-events: none;
+      transition: opacity .5s ease;
+    }
+
+    .proj-card:hover .im-wrap::after {
+      opacity: .35;
+    }
+
+    .proj-card .card-body {
+      min-height: 190px;
+    }
+    /* Construction & Site Progress — image only */
+.proj-card[data-id^="construction-"] .card-body {
+  display: none;
+}
+    .proj-card .card-title {
+      text-wrap: balance;
+    }
+
+    #modal .panel.modal-panel-wide {
+      width: min(860px, 100%);
+      padding: clamp(22px, 4vw, 56px);
+    }
+
+    #modal .mi {
+      aspect-ratio: 16/9;
+      margin: 14px 0 12px;
+      border: 1px solid var(--line);
+    }
+
+    #modal .mi img {
+      transition: opacity .25s ease, transform .6s cubic-bezier(.25, 1, .5, 1);
+    }
+
+    #modal .mi:hover img {
+      transform: scale(1.015);
+    }
+
+    .modal-thumbs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 2px 0 4px;
+      scrollbar-width: none;
+    }
+
+    .modal-thumbs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .modal-thumb {
+      flex: 0 0 76px;
+      width: 76px;
+      height: 52px;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      opacity: .55;
+      cursor: pointer;
+      transition: opacity .25s, border-color .25s, transform .25s;
+    }
+
+    .modal-thumb:hover,
+    .modal-thumb.active {
+      opacity: 1;
+      border-color: var(--bronze);
+      transform: translateY(-2px);
+    }
+
+    .highlights-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .highlights-list li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .highlights-list li:nth-child(odd) {
+      padding-right: 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .highlights-list li:nth-child(even) {
+      padding-left: 24px;
+    }
+
+    .highlight-icon-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(160, 124, 66, .08);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .highlight-icon-circle svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--bronze);
+      fill: none;
+    }
+
+    .highlight-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .highlight-title {
+      font-family: var(--fb);
+      font-size: .95rem;
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .highlight-desc {
+      font-size: .82rem;
+      color: var(--ink);
+      opacity: .6;
+      line-height: 1.3;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .spec-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .spec-item:nth-child(odd) {
+      padding-right: 20px;
+      border-right: 1px solid var(--line);
+    }
+
+    .spec-item:nth-child(even) {
+      padding-left: 24px;
+    }
+
+    .spec-icon {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      color: var(--ink);
+      opacity: .8;
+    }
+
+    .spec-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    .spec-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .spec-text dt {
+      font-family: var(--fb);
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: .55;
+      margin: 0;
+    }
+
+    .spec-text dd {
+      margin: 0;
+      font-size: .95rem;
+      color: var(--ink);
+      font-weight: 300;
+    }
+
+    .spec-item dt {
+      font-family: var(--fb);
+      font-size: .85rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      opacity: .75;
+    }
+
+    #modal .mono.dim {
+      font-family: var(--fb);
+      font-size: .85rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      color: var(--ink);
+      opacity: .75;
+      text-transform: uppercase;
+    }
+
+    .spec-item dd {
+      margin: 0;
+      font-size: .9rem;
+    }
+
+    @media(max-width:650px) {
+
+      .highlights-list,
+      .spec-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #modal .panel.modal-panel-wide {
+        padding: 20px;
+      }
+
+      .proj-card {
+        flex-basis: min(88vw, 520px);
+      }
+    }
+
+    /* ---------- final portfolio presentation ---------- */
+    .proj-card .im-wrap {
+      aspect-ratio: 16 / 10;
+      background: var(--paper-2);
+    }
+
+    /* .proj-card img {
+      object-fit: contain;
+      background: var(--paper-2);
+    } */
+
+    .proj-card .im-wrap::after {
+      background: linear-gradient(180deg, rgba(17, 15, 13, .04), transparent 38%, rgba(17, 15, 13, .08));
+    }
+
+    #modal .panel.modal-panel-wide {
+      width: min(50vw, 1380px);
+      max-height: 94vh;
+      padding: clamp(24px, 3.5vw, 54px);
+    }
+
+    @media(max-width:650px) {
+      #modal .panel.modal-panel-wide {
+        width: min(88vw, 100%);
+      }
+    }
+
+    #modal .mi {
+      aspect-ratio: auto;
+      min-height: min(62vh, 760px);
+      max-height: 62vh;
+      background: var(--paper-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modal .mi .ph {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modal .mi img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: none !important;
+      transition: opacity .25s ease;
+    }
+
+    #modal .mi:hover img {
+      transform: none !important;
+    }
+
+    .modal-thumb-btn {
+      flex: 0 0 86px;
+      width: 86px;
+      height: 60px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .modal-thumb {
+      width: 86px;
+      height: 60px;
+      object-fit: cover;
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      opacity: .58;
+      transition: opacity .25s, border-color .25s, transform .25s;
+    }
+
+    .modal-thumb-btn:hover .modal-thumb {
+      opacity: 1;
+      border-color: var(--bronze);
+      transform: translateY(-2px);
+    }
+
+    @media(max-width:900px) {
+      #modal .panel.modal-panel-wide {
+        width: 94vw;
+        max-height: 96vh;
+      }
+
+      #modal .mi {
+        max-height: 58vh;
+        min-height: 300px;
+      }
+    }
+
+    @media(max-width:650px) {
+      #modal .panel.modal-panel-wide {
+        width: 100%;
+        max-height: 100vh;
+        padding: 20px;
+      }
+
+      #modal .mi {
+        max-height: 52vh;
+        min-height: 240px;
+      }
+    }
+
+    /* ---------- final image fitting: preserve every image detail ---------- */
+    .proj-card .im-wrap {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--paper-2);
+    }
+
+    /* A restrained backdrop fills the frame without cropping the actual photograph. */
+    .proj-card .im-wrap::before {
+      content: "";
+      position: absolute;
+      inset: -18px;
+      z-index: -2;
+      background-image: var(--project-image);
+      background-size: cover;
+      background-position: center;
+      filter: blur(18px);
+      opacity: .16;
+      transform: scale(1.06);
+    }
+
+    .proj-card .im-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: rgba(17, 15, 13, .035);
+      pointer-events: none;
+    }
+
+    .proj-card .ph {
+      position: relative;
+      inset: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .proj-card .ph img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      background: transparent;
+    }
+
+    /* Modal image: fixed presentation area, complete image always visible. */
+    #modal .mi {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      min-height: 0;
+      height: min(68vh, 760px);
+      max-height: 68vh;
+      max-width: 100%;
+      margin: 14px 0 12px;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      isolation: isolate;
+    }
+
+    #modal .mi::before {
+      content: "";
+      position: absolute;
+      inset: -20px;
+      z-index: -2;
+      background: var(--modal-image, none);
+      background-size: cover;
+      background-position: center;
+      filter: blur(20px);
+      opacity: .13;
+      transform: scale(1.06);
+    }
+
+    #modal .mi::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: rgba(17, 15, 13, .035);
+      pointer-events: none;
+    }
+
+    #modal .mi .ph {
+      position: relative;
+      inset: auto;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+
+    #modal .mi img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      transform: none !important;
+      filter: none !important;
+      background: transparent;
+    }
+
+    #modal .mi:hover img {
+      transform: none !important;
+    }
+
+    .modal-thumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 2px 0 6px;
+      scrollbar-width: none;
+    }
+
+    .modal-thumbs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .modal-thumb-btn {
+      flex: 0 0 86px;
+      width: 86px;
+      height: 60px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .modal-thumb {
+      display: block;
+      width: 86px;
+      height: 60px;
+      object-fit: cover;
+      object-position: center;
+      background: var(--paper-2);
+      border: 1px solid var(--line);
+      opacity: .58;
+      transition: opacity .25s, border-color .25s, transform .25s;
+    }
+
+    .modal-thumb-btn:hover .modal-thumb,
+    .modal-thumb-btn:focus-visible .modal-thumb {
+      opacity: 1;
+      border-color: var(--bronze);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      #modal .mi {
+        height: min(62vh, 620px);
+        max-height: 62vh;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .proj-card .im-wrap {
+        aspect-ratio: 4 / 3;
+      }
+
+      #modal .mi {
+        height: min(54vh, 500px);
+        max-height: 54vh;
+      }
+    }
+/* Landscape & Outdoor only */
+.proj-card[data-id^="landscape-"] .ph {
+  background: var(--paper-2);
+}
+
+.proj-card[data-id^="landscape-"] .ph img {
+  object-fit: fill;
+  background: var(--paper-2);
+}
+
+
+.proj-card[data-id="interior-08"] .ph img,
+.proj-card[data-id="interior-09"] .ph img,
+.proj-card[data-id="interior-10"] .ph img {
+  object-fit: contain ;
+ 
+}
+ 
+  
+    /* ================= PLAN YOUR HOME ================= */
+    #estimate.plan-section{padding-block:clamp(72px,9vw,140px);overflow:hidden}
+    .plan-head{display:flex;justify-content:space-between;gap:40px;align-items:flex-start;margin-bottom:clamp(38px,5vw,66px)}
+    .plan-head-copy{max-width:760px}.plan-kicker{margin-bottom:16px;color:var(--bronze)}.plan-title{margin:0}.plan-intro{max-width:650px;margin:22px 0 0}
+    .plan-motto{max-width:230px;margin:8px 0 0;padding-top:28px;border-top:1px solid var(--ink);font-family:var(--fm);font-size:10px;letter-spacing:.28em;line-height:2.2;text-transform:uppercase}
+    .plan-panel{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);background:#10110e;color:var(--paper);padding:clamp(30px,4vw,56px);gap:clamp(36px,5.4vw,80px)}
+    .plan-form{min-width:0}.plan-field{padding:0 0 27px;margin-bottom:27px;border-bottom:1px solid rgba(245,240,232,.22)}
+    .plan-label{display:block;margin-bottom:14px;font-family:var(--fm);font-size:10px;letter-spacing:.22em;line-height:1.4;text-transform:uppercase;color:var(--paper)}
+    .plan-area-wrap{display:flex;border:1px solid rgba(245,240,232,.33)}.plan-area{width:100%;min-width:0;background:transparent;border:0;color:var(--paper);font-family:var(--fd);font-size:clamp(1.6rem,2.8vw,2.15rem);padding:12px 16px;outline:0}.plan-area:focus{box-shadow:inset 0 0 0 1px var(--bronze)}.plan-unit{display:flex;align-items:center;padding:0 17px;border-left:1px solid rgba(245,240,232,.33);white-space:nowrap;font-size:14px;color:#c6c0b4}
+    .plan-help{margin:10px 0 0;color:#aaa59b;font-size:13px}.plan-choice-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.plan-choice{min-height:56px;border:1px solid rgba(245,240,232,.32);background:transparent;color:var(--paper);font:400 15px var(--fb);cursor:pointer;transition:.25s ease}.plan-choice:hover,.plan-choice[aria-pressed="true"]{border-color:var(--bronze);background:rgba(185,132,55,.13)}
+    .plan-options{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.plan-option{position:relative;display:flex;align-items:center;gap:11px;min-height:38px;cursor:pointer;font-size:15px;color:#e5e0d7}.plan-option input{position:absolute;opacity:0}.plan-box{width:18px;height:18px;flex:none;border:1px solid rgba(245,240,232,.5);display:grid;place-items:center}.plan-box::after{content:"";width:7px;height:4px;border-left:1px solid #111;border-bottom:1px solid #111;transform:rotate(-45deg) translate(1px,-1px);opacity:0}.plan-option input:checked+.plan-box{background:#e9b764;border-color:#e9b764}.plan-option input:checked+.plan-box::after{opacity:1}.plan-other{display:none;width:100%;margin:7px 0 0 29px;padding:9px 0;background:transparent;border:0;border-bottom:1px solid rgba(245,240,232,.38);color:var(--paper);font:14px var(--fb);outline:0}.plan-other.is-visible{display:block}
+    .plan-submit{width:100%;height: 200px;padding:10px;min-height:50px;margin-top:4px;background:var(--paper);border-color:var(--paper);color:var(--ink);justify-content:center;margin-left:110px;}.plan-submit:hover{background:transparent;color:var(--paper)}
+    .plan-inspiration{min-width:0;border-left:1px solid rgba(245,240,232,.28);padding-left:clamp(28px,4.2vw,45px)}.plan-inspiration h3{margin:0;color:#e9b764;font:400 11px var(--fm);letter-spacing:.3em;text-transform:uppercase}.plan-inspiration>p{margin:15px 0 28px;color:#c7c1b6}.plan-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.plan-card{min-width:0;border:1px solid rgba(233,183,100,.65);background:#171815}.plan-card img{display:block;width:100%;aspect-ratio:.84;object-fit:cover}.plan-card span{display:block;min-height:50px;padding:10px 9px;font:400 9px/1.55 var(--fm);letter-spacing:.11em;text-transform:uppercase}.plan-quote{margin:clamp(36px,5vw,62px) 0 0;padding-top:27px;border-top:1px solid rgba(245,240,232,.25);color:#c7c1b6;font-style:italic;line-height:1.55}
+    @media(max-width:900px){.plan-panel{grid-template-columns:1fr}.plan-inspiration{border-left:0;border-top:1px solid rgba(245,240,232,.28);padding:34px 0 0}.plan-cards{grid-template-columns:repeat(6,minmax(105px,1fr));overflow:auto;padding-bottom:6px}.plan-card img{aspect-ratio:.9}.plan-quote{margin-top:34px}.plan-motto{display:none}}
+    @media(max-width:560px){.plan-head{display:block}.plan-panel{padding:25px 19px}.plan-choice-row{gap:7px}.plan-choice{min-height:50px;font-size:13px}.plan-options{grid-template-columns:1fr;gap:2px}.plan-cards{grid-template-columns:repeat(6,130px)}.plan-submit{min-height:62px;font-size:9px}.plan-title{font-size:clamp(2.6rem,13vw,4rem)}}
+
+    .whatsapp-float {
+      position: fixed;
+      right: 28px;
+      bottom: 28px;
+      z-index: 130;
+      display: grid;
+      width: 62px;
+      height: 62px;
+      place-items: center;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+      transition:  transform .25s ease, box-shadow .25s ease; /* CHANGED */
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .22);
+    }
+
+    .whatsapp-float svg { width: 32px; height: 32px; fill: currentColor; }
+
+    @media(max-width:560px) { .whatsapp-float { right: 18px; bottom: 18px; width: 58px; height: 58px; } }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HomeAndConstructionBusiness",
+    "name":"Trinity Builders and Developers",
+    "description":"Engineer-led residential, villa, interior, commercial construction and site engineering in Kerala.",
+    "areaServed":"Kerala, India",
+    "knowsAbout":["Residential construction","Villa construction","Interior architecture","Commercial construction","Site engineering","Architectural visualization"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <div id="cur"></div>
+
+  <header id="nav">
+    <a class="brand" href="#hero">
+      <img src="images/trinity-logo.png" alt=""><b>Trinity</b><i>Builders &amp; Developers</i></a>
+    <nav class="links">
+      <a href="#statement">Practice</a><a href="#build">How we build</a><a href="#projects">Projects</a>
+      <a href="#services">Services</a><a href="#estimate">Estimate</a><a href="#founder">Founder</a>
+      <a class="cta" href="#contact">Start a project</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <div id="menu">
+    <a href="#statement">Practice</a><a href="#build">How we build</a><a href="#projects">Projects</a>
+    <a href="#services">Services</a><a href="#estimate">Estimate</a><a href="#founder">Founder</a><a href="#contact">Start a project</a>
+    <div class="mono dim" style="margin-top:34px">Chunakkara,Mavelikkara · Kerala</div>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero">
+    <div class="slats" id="slats" aria-hidden="true"></div>
+    <div class="hero-veil"></div>
+
+    <div class="hero-top">
+      <div class="mono">Mavelikkara, Kerala</div>
+      <div class="mono">together we build your dreams</div>
+    </div>
+
+    <div class="hero-body">
+      <h1 class="h1">
+        <span class="mask"><span>Building Spaces.</span></span>
+        <span class="mask"><span>Creating Legacies.</span></span>
+      </h1>
+      <div class="hero-foot">
+        <p class="up">Homes, villas and commercial buildings across central Kerala — designed to a drawing set, priced
+          to a specification, and supervised by the engineer who signs off on them.</p>
+        <div class="cue mono up"><span>Scroll</span><span class="b"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATEMENT ================= -->
+  <section id="statement">
+    <div class="wrap">
+      <div class="stmt-grid">
+        <p class="stmt" id="stmt">A building in Kerala has to take the monsoon, the heat and forty years of family life.
+          We build for the fortieth year, not the photograph.</p>
+        <div style="min-width:180px">
+          <div class="rule" style="margin-bottom:16px"></div>
+          <div class="mono dim">Residential</div>
+          <div class="mono dim">Villas</div>
+          <div class="mono dim">Commercial</div>
+          <div class="mono dim">Renovation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BUILD SEQUENCE (signature) ================= -->
+  <section id="build">
+    <div class="stage" id="bstage">
+      <div class="bs-count"><span id="bsNow">01</span> / 06 · Build sequence</div>
+
+      <div class="bs-copy">
+        <div class="bs-swap" id="bsSwap">
+          <span class="bs-k mono" id="bsK">Stage 01</span>
+          <h2 class="bs-t" id="bsT">Setting out</h2>
+          <p class="bs-d" id="bsD">Levels, setbacks and the exact footprint pegged on your plot — checked against the
+            approved plan before a single trench is dug.</p>
+        </div>
+        <div class="bs-rail" id="bsRail"></div>
+      </div>
+
+      <div class="bs-svg">
+        <svg viewBox="0 0 1000 600" aria-label="A building assembling stage by stage">
+          <!-- 1 · site -->
+          <g data-g="0">
+            <path d="M40 520 H960" />
+            <path class="thin" d="M170 520 V556 M830 520 V556" />
+            <path class="thin" d="M170 548 H830" />
+            <text x="500" y="574" text-anchor="middle">SETTING OUT</text>
+            <path class="thin" d="M100 520 L60 556 M140 520 L100 556 M900 520 L860 556 M940 520 L900 556" />
+          </g>
+          <!-- 2 · foundation + plinth -->
+          <g data-g="1">
+            <path class="fillp" d="M170 520 H830 V486 H170 Z" />
+            <path class="thin" d="M200 520 V552 H250 V520 M750 520 V552 H800 V520" />
+            <path class="hatch"
+              d="M180 520 L200 486 M230 520 L250 486 M280 520 L300 486 M330 520 L350 486 M380 520 L400 486 M430 520 L450 486 M480 520 L500 486 M530 520 L550 486 M580 520 L600 486 M630 520 L650 486 M680 520 L700 486 M730 520 L750 486 M780 520 L800 486" />
+          </g>
+          <!-- 3 · columns -->
+          <g data-g="2">
+            <path d="M205 486 V346 M325 486 V346 M445 486 V346 M565 486 V346 M685 486 V346 M805 486 V346" />
+            <path class="thin" d="M205 486 h-14 v-140 h14 M805 486 h14 v-140 h-14" />
+          </g>
+          <!-- 4 · slab -->
+          <g data-g="3">
+            <path class="fillp" d="M150 346 H860 V318 H150 Z" />
+            <path class="thin" d="M150 332 H860" />
+            <path class="thin" d="M120 318 H150 M120 346 H150" />
+            <text x="96" y="338" text-anchor="end">SLAB</text>
+          </g>
+          <!-- 5 · upper walls + roof -->
+          <g data-g="4">
+            <path d="M240 318 V214 M770 318 V214" />
+            <path d="M240 214 H770" />
+            <path d="M195 216 L505 118 L815 216" />
+            <path d="M195 216 H815" />
+            <path d="M475 152 L505 130 L535 152 Z" />
+          </g>
+          <!-- 6 · finishes -->
+          <g data-g="5">
+            <rect x="300" y="240" width="72" height="52" />
+            <rect x="469" y="240" width="72" height="52" />
+            <rect x="638" y="240" width="72" height="52" />
+            <rect x="360" y="378" width="86" height="108" />
+            <rect x="564" y="378" width="86" height="108" />
+            <path d="M467 378 H543 V486 H467 Z" />
+            <path class="thin" d="M505 378 V486" />
+            <path class="hatch" d="M240 300 H770 M240 280 H770 M240 260 H770" />
+            <path class="thin" d="M880 486 V346 M880 486 H860 M880 346 H860" />
+            <text x="898" y="420">FLOOR 1</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="proj-head">
+        <div>
+          <div class="mono dim">Selected Works · Trinity Portfolio</div>
+          <h2 class="h2" style="margin:10px 0 0"><span class="mask"><span>Projects & Architectural Work</span></span>
+          </h2>
+        </div>
+        <div class="proj-cats" id="projCats" role="tablist" aria-label="Project categories">
+
+  <button class="cat-btn active" data-cat="residences" role="tab" aria-selected="true">
+    Residences <span class="cnt">(9)</span>
+  </button>
+
+  <button class="cat-btn" data-cat="landscape" role="tab" aria-selected="false">
+    Landscape &amp; Outdoor <span class="cnt">(6)</span>
+  </button>
+
+  <button class="cat-btn" data-cat="interiors" role="tab" aria-selected="false">
+    Interiors <span class="cnt">(10)</span>
+  </button>
+
+  <button class="cat-btn" data-cat="concepts" role="tab" aria-selected="false">
+    Concepts &amp; Visualizations <span class="cnt">(7)</span>
+  </button>
+  <button class="cat-btn" data-cat="construction" role="tab" aria-selected="false">
+  Construction &amp; Site Progress <span class="cnt">(4)</span>
+</button>
+
+</div>
+      </div>
+
+      <div class="proj-viewport" id="projViewport">
+        <div class="proj-track" id="projTrack">
+          <!-- Dynamically rendered project cards -->
+        </div>
+      </div>
+
+      <div class="proj-scroll-hint">
+        <div class="mono">Drag or scroll horizontally to explore the portfolio</div>
+        <div class="proj-nav-btns">
+          <button class="proj-nav-btn" id="projPrev" aria-label="Previous project">←</button>
+          <button class="proj-nav-btn" id="projNext" aria-label="Next project">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="wrap">
+      <div
+        style="display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:clamp(24px,4vw,48px)">
+        <h2 class="h2" style="margin:0"><span class="mask"><span>What we take on</span></span></h2>
+        <p class="lead up" style="font-size:1rem;margin:0;max-width:38ch">From a single-floor home to a commercial shell
+          — scoped, priced and built to a drawing set.</p>
+      </div>
+      <div class="srv" id="srv"></div>
+    </div>
+  </section>
+
+  <!-- ================= FOUNDER ================= -->
+  <section id="founder">
+    <div class="wrap">
+      <div class="fd-grid">
+        <div>
+          <div class="frame up">
+              <img src="images/john-mathew.jpeg" alt="John Mathew · Founder & Engineer">
+          </div>
+          <div class="mono dim" style="margin-top:12px">John Mathew · Founder &amp; Engineer</div>
+        </div>
+        <div>
+          <div class="mono dim up">Behind every project</div>
+          <p class="fq" id="fq" style="margin-top:18px">
+            <span class="mask"><span>“I would rather explain</span></span>
+            <span class="mask"><span>a detail three times than</span></span>
+            <span class="mask"><span>fix it once after the plaster.”</span></span>
+          </p>
+          <p class="lead up" style="opacity:.78">Trinity is led by <strong style="font-weight:500">John Mathew </strong>, an
+            engineer who handles the technical side of every project himself — the structural brief, the material
+            selection, the site supervision, the checks before each pour.</p>
+          <p class="lead up" style="opacity:.78;margin-top:16px">One point of contact who can actually answer the
+            question, instead of relaying it to a site team you never meet.</p>
+          <span class="sig up">John Mathew </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FIGURES ================= -->
+  <section id="figures">
+    <div class="wrap-n">
+      <div class="fig-row">
+        <div class="fig"><b class="cnt">35+</b><span class="mono dim">Projects delivered</span></div>
+        <div class="fig"><b class="cnt">10+</b><span class="mono dim">Years Of Experience</span></div>
+        <div class="fig"><b class="cnt">2L+</b><span class="mono dim">Sq. ft. built</span></div>
+        <div class="fig"><b class="cnt">05</b><span class="mono dim">Ongoing sites</span></div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- ================= PLAN YOUR HOME ================= -->
+  <section id="estimate" class="plan-section">
+    <div class="wrap">
+      <div class="plan-head">
+        <div class="plan-head-copy">
+          <div class="mono plan-kicker">06 — Plan your home</div>
+          <h2 class="h2 plan-title">Let’s build it <em>together.</em></h2>
+          <p class="lead plan-intro">Customize a few details to help us prepare a tailored estimate and take the first step towards your dream space.</p>
+        </div>
+        <p class="plan-motto">Every great home begins with a plan.</p>
+      </div>
+
+      <div class="plan-panel">
+        <div class="plan-form">
+          <div class="plan-field">
+            <label class="plan-label" for="planArea">1. Built-up area</label>
+            <div class="plan-area-wrap"><input class="plan-area" id="planArea" inputmode="numeric" placeholder="e.g. 2,000" aria-describedby="planAreaHelp"><span class="plan-unit">sq ft</span></div>
+            <p class="plan-help" id="planAreaHelp">Approximate built-up area of your project.</p>
+          </div>
+          <div class="plan-field">
+            <span class="plan-label">2. Floors</span>
+            <div class="plan-choice-row" id="planFloors" role="group" aria-label="Number of floors">
+              <button class="plan-choice" type="button" data-value="Single" aria-pressed="true">Single</button><button class="plan-choice" type="button" data-value="Two" aria-pressed="false">Two</button><button class="plan-choice" type="button" data-value="Three" aria-pressed="false">Three</button>
+            </div>
+            <p class="plan-help">How many floors are you planning?</p>
+          </div>
+          <div class="plan-field">
+            <span class="plan-label">3. Finish package</span>
+            <div class="plan-choice-row" id="planPackage" role="group" aria-label="Finish package">
+              <button class="plan-choice" type="button" data-value="Essential" aria-pressed="true">Essential</button><button class="plan-choice" type="button" data-value="Premium" aria-pressed="false">Premium</button><button class="plan-choice" type="button" data-value="Signature" aria-pressed="false">Signature</button>
+            </div>
+            <p class="plan-help">Choose the level of finishes and fittings.</p>
+          </div>
+          <div class="plan-field">
+            <span class="plan-label">4. Include in estimate</span>
+            <div class="plan-options" id="planExtras">
+              <label class="plan-option"><input type="checkbox" value="Interior works"><span class="plan-box" aria-hidden="true"></span>Interior works</label>
+              <label class="plan-option"><input type="checkbox" value="Compound wall & gate"><span class="plan-box" aria-hidden="true"></span>Compound wall &amp; gate</label>
+              <label class="plan-option"><input type="checkbox" value="Landscaping"><span class="plan-box" aria-hidden="true"></span>Landscaping</label>
+              <label class="plan-option"><input type="checkbox" value="Building Permit"><span class="plan-box" aria-hidden="true"></span>Building Permit</label>
+              <label class="plan-option"><input type="checkbox" value="Modular kitchen"><span class="plan-box" aria-hidden="true"></span>Modular kitchen</label>
+              <label class="plan-option"><input type="checkbox" value="Site Supervision"><span class="plan-box" aria-hidden="true"></span>Site Supervision</label>
+              <label class="plan-option"><input type="checkbox" value="Home automation"><span class="plan-box" aria-hidden="true"></span>Home automation</label>
+              <label class="plan-option"><input type="checkbox" value="Vastu Consulting"><span class="plan-box" aria-hidden="true"></span>Vastu Consulting</label>
+              <label class="plan-option"><input type="checkbox" value="EV charging point"><span class="plan-box" aria-hidden="true"></span>EV charging point</label>
+              <label class="plan-option"><input type="checkbox" value="Planning & Design"><span class="plan-box" aria-hidden="true"></span>Planning & Design</label>
+              <label class="plan-option"><input type="checkbox" value="Custom storage"><span class="plan-box" aria-hidden="true"></span>Custom storage</label>
+              <label class="plan-option"><input id="planOtherCheck" type="checkbox" value="Other requirements"><span class="plan-box" aria-hidden="true"></span>Other requirements</label>
+            </div>
+            <input class="plan-other" id="planOtherText" placeholder="Please specify your requirements" aria-label="Other requirements">
+          </div>
+          <a href="#contact" class="btn plan-submit" id="planUse"><span>Take The First Step&nbsp; →</span></a>
+          
+        </div>
+
+        <aside class="plan-inspiration" aria-label="Popular additions">
+          <h3>What else can we include?</h3><p>Add more features to make your home truly yours.</p>
+          <div class="plan-cards">
+            <article class="plan-card"><img src="images/projects/interior_05_kitchen.jpeg" alt="Modular kitchen"><span>Modular kitchen</span></article>
+            <article class="plan-card"><img src="images/projects/residence_04_evening_detail.jpeg" alt="Swimming pool"><span>Planning & Design</span></article>
+            <article class="plan-card"><img src="images/projects/landscape_01_garden.jpeg" alt="Outdoor living"><span>Outdoor living</span></article>
+            <article class="plan-card"><img src="images/projects/interior_04_entrance.jpeg" alt="Home automation"><span>Home automation</span></article>
+            <article class="plan-card"><img src="images/projects/residence_03_modern.jpeg" alt="Lift and elevator"><span>Renovation</span></article>
+            <article class="plan-card"><img src="images/projects/concept_06.jpeg" alt="Solar ready electricals"><span>3D Drawing</span></article>
+          </div>
+          <p class="plan-quote">“Thoughtful additions for a more comfortable, future-ready home.”</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="ct">
+        <div>
+          <div class="mono dim up">Start a project</div>
+          <h2 class="h2" style="margin:16px 0 24px">
+            <span class="mask"><span>Tell us about</span></span><span class="mask"><span>your plot.</span></span>
+          </h2>
+          <p class="lead up">Send the location, the built-up area you have in mind and a budget range. John Mathew  will tell
+            you what is realistic on that plot before anything gets drawn.</p>
+          <div style="margin-top:36px" class="up">
+            <div class="cl"><span class="mono dim">Office</span><span>Chunakkara,Mavelikkara-Kerala</span></div>
+            <div class="cl"><span class="mono dim">Phone</span><span class="mono">+91 9745848709,+91 6235108709</span></div>
+            <div class="cl"><span class="mono dim" >Email</span><span class="mono"style="text-transform: none;">teamtrinitybuildersanddevs@gmail.com</span></div>
+          <div class="cl">
+  <span class="mono dim">Social</span>
+
+  <div style="display:flex;align-items:center;gap:18px;justify-content:center;min-width:180px;">
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/trinitybuildersanddevelopers_/?stkn=MTdmcDhvdnh0c2c5ZQ=="
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram"
+       style="display:inline-flex;align-items:center;">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="18" height="18" rx="5"
+              stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4"
+                stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1"
+                fill="currentColor"/>
+      </svg>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/share/19Wm27BTgH/?mibextid=wwXIfr"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook"
+       style="display:inline-flex;align-items:center;">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7.3v3h2.7v8h3.5z"/>
+      </svg>
+    </a>
+
+  </div>
+</div>
+          </div>
+        </div>
+        <div>
+          <form id="form" novalidate>
+            <div class="field"><label for="f1">Name</label><input id="f1" autocomplete="name"
+                placeholder="Your full name">
+              <div class="err">Enter your name</div>
+            </div>
+            <div class="field"><label for="fEmail">Email</label><input id="fEmail" type="email" name="email" required
+                autocomplete="email" placeholder="Your email address">
+            </div>
+            <div class="field"><label for="f2">Phone</label><input id="f2" inputmode="tel" autocomplete="tel"
+                placeholder="10-digit mobile number">
+              <div class="err">Enter a valid 10-digit number</div>
+            </div>
+            <div class="field"><label for="f3">Plot location</label><input id="f3" placeholder="Panchayat / town">
+              <div class="err">Where is the plot?</div>
+            </div>
+            <div class="field"><label for="f4">Project type</label>
+              <select id="f4">
+                <option value="">Select one</option>
+                <option>New home</option>
+                <option>Villa</option>
+                <option>Commercial building</option>
+                <option>Renovation</option>
+                <option>Interiors</option>
+                <option>Not sure yet</option>
+              </select>
+              <div class="err">Choose a project type</div>
+            </div>
+            <div class="field"><label for="f5">Brief</label><textarea id="f5"
+                placeholder="Built-up area, floors, budget range, timeline"></textarea>
+              <div class="err">Tell us a little about it</div>
+            </div>
+            <button class="btn" type="submit"><span>Send enquiry</span></button>
+          </form>
+          <div class="sent" id="sent">
+            <div class="mono dim">Enquiry received</div>
+            <p class="h3" style="margin:10px 0 8px">Thank you — we'll be in touch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="f-top">
+      <div>
+        <div class="mono dim">Trinity Builders and Developers</div>
+        <div style="margin-top:10px;opacity:.7">Chunakkara,Mavelikkara · Kerala</div>
+        <a href="https://www.instagram.com/trinitybuildersanddevelopers_/?stkn=MTdmcDhvdnh0c2c5ZQ=="
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram"
+   style="display:inline-flex;margin-top:16px;align-items:center;">
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+    <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+  </svg>
+</a>
+ <a href="https://www.facebook.com/share/19Wm27BTgH/?mibextid=wwXIfr"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Facebook"
+     style="display:inline-flex;align-items:center;">
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.6 1.7-1.6h1.8V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7.3v3h2.7v8h3.5z"/>
+    </svg>
+  </a>
+      </div>
+      <div style="display:flex;gap:54px;flex-wrap:wrap">
+        <div>
+          <div class="mono dim" style="margin-bottom:11px">Site</div>
+          <div style="display:grid;gap:6px"><a href="#statement">Practice</a><a href="#build">How we build</a><a
+              href="#projects">Projects</a><a href="#services">Services</a></div>
+        </div>
+        <div>
+          <div class="mono dim" style="margin-bottom:11px">Build</div>
+          <div style="display:grid;gap:6px;opacity:.72">
+            <span>Residential</span><span>Villas</span><span>Commercial</span><span>Renovation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="f-mark" id="fmark">
+  <span class="f-logo">
+    <img src="images/trinity-logo.png" alt="">
+  </span>
+  <span>Trinity</span>
+</div>
+    <div class="f-bot mono"><span>© <span id="yr"></span> Trinity Builders and Developers</span></div>
+  </footer>
+
+  <div id="modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="veil" data-close></div>
+    <div class="panel modal-panel-wide">
+      <button class="close" data-close aria-label="Close">✕</button>
+
+      <!-- Gallery Carousel -->
+      <div style="margin-top:14px">
+        <div class="mi rel" style="margin-bottom:10px">
+          <div class="ph"><img id="mImg" alt="Project image"></div>
+        </div>
+        <div class="modal-thumbs" id="mThumbs"></div>
+      </div>
+
+      <div style="margin-top:20px">
+        <div class="mono dim" id="mTag" style="color:var(--bronze)"></div>
+        <h2 class="h2" id="mTitle" style="margin:8px 0 12px;font-size:clamp(1.7rem,3.6vw,2.5rem)"></h2>
+        <p class="lead" id="mDesc" style="max-width:100%;font-size:1.02rem"></p>
+      </div>
+
+      <!-- Architectural Highlights -->
+      <div style="margin-top:24px">
+        <div class="mono dim">Design Highlights</div>
+        <ul class="highlights-list" id="mHighlights"></ul>
+      </div>
+
+      <!-- Technical Specs -->
+      <div class="spec-grid" id="mSpec"></div>
+
+      <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <a class="btn" href="#contact" data-close
+          style="margin-top:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px 12px"><span>Discuss
+            a similar build</span></a>
+        <button class="cat-btn" data-close
+          style="margin:0;padding:16px 12px;display:flex;align-items:center;justify-content:center;text-align:center">Close
+          Project Details</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+  <script>
+    const $ = (s, c = document) => c.querySelector(s), $$ = (s, c = document) => [...c.querySelectorAll(s)];
+    $("#yr").textContent = new Date().getFullYear();
+
+    /* ---------------- data ---------------- */
+    const HERO = [
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=80",
+  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80"];
+
+    const STAGES = [
+      { k: "Stage 01", t: "Setting out", d: "Levels, setbacks and the exact footprint pegged on your plot — checked against the approved plan before a single trench is dug." },
+      { k: "Stage 02", t: "Foundation & plinth", d: "Soil-appropriate footings, a plinth beam tied all round, and damp proofing detailed for Kerala's water table." },
+      { k: "Stage 03", t: "Columns & frame", d: "Reinforcement checked and photographed at every column before concreting. Nothing gets poured without the engineer on site." },
+      { k: "Stage 04", t: "Slab casting", d: "Shuttering, cover blocks and bar spacing verified, then a continuous pour with curing carried out for the full period — not the convenient one." },
+      { k: "Stage 05", t: "Walls & roof", d: "Blockwork, the upper floor and a sloped roof detailed for heavy monsoon runoff with generous overhangs." },
+      { k: "Stage 06", t: "Finishing & handover", d: "Plaster, joinery, services tested, snags closed — handed over with as-built drawings and warranties." }
+    ];
+
+    const PROJECTS = [{ "id": "concept-01", "title": "Concept 01", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_01.jpeg", "alt": "Concept 01 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Massing and proportion", "Facade composition", "Material direction", "Design visualization"], 
+    "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-02", "title": "Concept 02", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_02.jpeg", "alt": "Concept 02 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", 
+    "features": ["Layered volumes", "Openings and daylight", "Landscape integration", "Exterior character"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-03", "title": "Concept 03", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_03.jpeg", "alt": "Concept 03 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Contemporary massing", "Roof and balcony composition", "Material contrast", "Presentation visualization"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-04", "title": "Concept 04", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_04.jpeg", "alt": "Concept 04 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Tropical residential form", "Indoor–outdoor connection", "Roof geometry", "Facade studies"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-05", "title": "Concept 05", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_05.jpeg", "alt": "Concept 05 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Modern facade language", "Vertical and horizontal balance", "Outdoor approach", "Visual design development"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-06", "title": "Concept 06", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_06.jpeg", "alt": "Concept 06 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Residential massing study", "Canopy and entry sequence", "Landscape framing", "Design communication"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "concept-07", "title": "Concept 07", "cat": "concepts", "tag": "Concept", "img": "images/projects/concept_07.jpeg", "alt": "Concept 07 — Trinity Builders and Developers", "desc": "Architectural visualization developed to explore massing, facade composition, material balance and the character of the proposed home.", "features": ["Clean geometric volumes", "Window and balcony rhythm", "Material contrast", "Concept visualization"], "scope": "Architectural visualization", "location": "Kerala", "area": "Concept study", "year": "2024–2026", "gallery": [] }, { "id": "residence-01", "title": "Residence 01", "cat": "residences", "tag": "Residence", "img": "images/projects/residence_01_tropical.jpeg", "alt": "Residence 01 — Trinity Builders and Developers", "desc": "A Kerala residence shaped by familiar gable forms, generous openings and a clear connection between the home and its front approach.", "features": ["Layered gable rooflines", "Balanced facade proportions", "Natural-light openings", "Defined entrance approach"], "scope": "Design & construction", "location": "Kerala", "area": "Approx. 2,800 sq.ft", "year": "2024", "gallery": [] }, { "id": "residence-02", "title": "Residence 02", "cat": "residences", "tag": "Residence", "img": "images/projects/residence_02_white_home.png", "alt": "Residence 02 — Trinity Builders and Developers", "desc": "A bright two-storey family residence with strong roof geometry, deep shaded openings and a simple, composed exterior palette.", "features": ["Twin-gable composition", "Shaded upper balcony", "Strong entry framing", "Outdoor approach"], "scope": "Design & construction", "location": "Kerala", "area": "Approx. 3,000 sq.ft", "year": "2024", "gallery": [] }, { "id": "residence-03", "title": "Residence 03", "cat": "residences", "tag": "Residence", "img": "images/projects/residence_03_modern.jpeg", "alt": "Residence 03 — Trinity Builders and Developers", "desc": "A contemporary residence built around crisp roof forms, a broad upper-level frontage and a restrained combination of white and dark facade elements.", "features": ["Strong roof geometry", "Defined balcony edge", "Contrasting facade bands", "Residential street presence"], "scope": "Design & construction", "location": "Kerala", "area": "Approx. 3,200 sq.ft", "year": "2025", "gallery": [] }, { "id": "residence-04", "title": "Residence 04", "cat": "residences", "tag": "Residence", "img": "images/projects/residence_04_illuminated.jpeg", "alt": "Residence 04 — Trinity Builders and Developers", "desc": "A night-time residence where layered lighting, textured facade surfaces and a generous paved approach give the architecture a strong evening presence.", "features": ["Layered exterior lighting", "Textured facade treatment", "Paved arrival court", "Defined entrance sequence"], "scope": "Design & construction", "location": "Kerala", "area": "Approx. 3,000 sq.ft", "year": "2025", "gallery": ["images/projects/residence_04_evening_detail.jpeg"] },{
+  "id": "residence-06",
+  "title": "Residence 06",
+  "cat": "residences",
+  "tag": "Residence",
+  "img": "images/projects/residence_06.jpeg",
+  "alt": "Residence 06 — Trinity Builders and Developers",
+  "desc": "A contemporary two-storey residence with a warm exterior palette, defined entrance and carefully layered lighting.",
+  "features": [
+    "Contemporary facade",
+    "Covered upper terrace",
+    "Warm exterior lighting",
+    "Defined entrance"
+  ],
+  "scope": "Design & construction",
+  "location": "Kerala",
+  "area": "Approx. 2,800 sq.ft",
+  "year": "2025",
+  "gallery": []
+},{ "id": "residence-05",
+  "title": "Residence 05",
+  "cat": "residences",
+  "tag": "Residence",
+  "img": "images/projects/residence_05.jpeg",
+  "alt": "Residence 05 — Trinity Builders and Developers",
+  "desc": "A traditional Kerala-inspired residence with layered roof forms, generous outdoor space and a strong connection to its tropical setting.",
+  "features": [
+    "Layered roof composition",
+    "Traditional Kerala character",
+    "Covered entrance",
+    "Outdoor approach"
+  ],
+  "scope": "Design & construction",
+  "location": "Kerala",
+  "area": "Approx. 2,800 sq.ft",
+  "year": "2025",
+  "gallery": []
+},
+
+{
+  "id": "residence-07",
+  "title": "Residence 07",
+  "cat": "residences",
+  "tag": "Residence",
+  "img": "images/projects/residence_07.jpeg",
+  "alt": "Residence 07 — Trinity Builders and Developers",
+  "desc": "A bright contemporary family residence combining clean geometric forms, bold colour accents and practical outdoor spaces.",
+  "features": [
+    "Modern geometric form",
+    "Open upper terrace",
+    "Contemporary facade",
+    "Functional outdoor space"
+  ],
+  "scope": "Design & construction",
+  "location": "Kerala",
+  "area": "Approx. 2,500 sq.ft",
+  "year": "2025",
+  "gallery": []
+},{
+  "id": "residence-08",
+  "title": "Residence 08",
+  "cat": "residences",
+  "tag": "Residence",
+  "img": "images/projects/residence_08.png",
+  "alt": "Residence 08 — Trinity Builders and Developers",
+  "desc": "A Kerala residence featuring natural stone walls, traditional roof forms and a warm, earthy character.",
+  "features": [
+    "Natural stone facade",
+    "Traditional roof forms",
+    "Covered entrance",
+    "Tropical setting"
+  ],
+  "scope": "Design & construction",
+  "location": "Kerala",
+  "area": "Approx. 2,500 sq.ft",
+  "year": "2025",
+  "gallery": []
+},
+{
+  "id": "residence-09",
+  "title": "Residence 09",
+  "cat": "residences",
+  "tag": "Residence",
+  "img": "images/projects/residence_09.jpeg",
+  "alt": "Residence 09 — Trinity Builders and Developers",
+  "desc": "A clean contemporary residence with a bright facade, timber detailing and a simple, functional front elevation.",
+  "features": [
+    "Clean contemporary facade",
+    "Timber door and windows",
+    "Covered entrance",
+    "Functional front approach"
+  ],
+  "scope": "Design & construction",
+  "location": "Kerala",
+  "area": "Approx. 2,000 sq.ft",
+  "year": "2025",
+  "gallery": []
+},
+     { "id": "interior-07", "title": "Prayer Interior", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_07_shrine.png", "alt": "Prayer Interior — Trinity Builders and Developers", "desc": "A custom devotional interior organized as a compact timber-lined alcove with integrated shelving, lighting and storage.", "features": ["Custom timber joinery", "Integrated display shelving", "Warm accent lighting", "Compact built-in planning"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] },{ "id": "interior-01", "title": "Dining Interior", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_01_dining.jpeg", "alt": "Dining Interior — Trinity Builders and Developers", "desc": "A refined dining setting with a clean palette, integrated lighting and a strong relationship between furniture, ceiling and wall details.", "features": ["Integrated lighting", "Balanced furniture layout", "Clean material palette", "Contemporary detailing"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] },{
+  "id": "interior-08",
+  "title": "Staircase Interior",
+  "cat": "interiors",
+  "tag": "Interior",
+  "img": "images/projects/interior_08.png",
+  "imageClass": "portrait-interior",
+  "alt": "Staircase Interior — Trinity Builders and Developers",
+  "desc": "A contemporary staircase interior combining stainless-steel railing, marble flooring and warm accent lighting.",
+  "features": [
+    "Stainless-steel railing",
+    "Marble flooring",
+    "Accent wall lighting",
+    "Contemporary detailing"
+  ],
+  "scope": "Interior design & finishing",
+  "location": "Kerala",
+  "area": "Approx. 150–450 sq.ft",
+  "year": "2025",
+  "gallery": []
+},
+{
+  "id": "interior-09",
+  "title": "Living Area Interior",
+  "cat": "interiors",
+  "tag": "Interior",
+  "img": "images/projects/interior_09.png",
+  "imageClass": "portrait-interior",
+  "alt": "Living Area Interior — Trinity Builders and Developers",
+  "desc": "A warm living area featuring a timber accent wall, integrated TV unit and layered ceiling lighting.",
+  "features": [
+    "Timber feature wall",
+    "Integrated TV unit",
+    "Built-in storage",
+    "Layered ceiling lighting"
+  ],
+  "scope": "Interior design & finishing",
+  "location": "Kerala",
+  "area": "Approx. 150–450 sq.ft",
+  "year": "2025",
+  "gallery": []
+},
+{
+  "id": "interior-10",
+  "title": "False Ceiling Interior",
+  "cat": "interiors",
+  "tag": "Interior",
+  "img": "images/projects/interior_10.png",
+  "imageClass": "portrait-interior",
+  "alt": "False Ceiling Interior — Trinity Builders and Developers",
+  "desc": "A contemporary ceiling design using geometric forms and concealed warm LED lighting to define the interior space.",
+  "features": [
+    "Geometric ceiling design",
+    "Concealed LED lighting",
+    "Recessed lighting",
+    "Contemporary detailing"
+  ],
+  "scope": "Interior design & finishing",
+  "location": "Kerala",
+  "area": "Approx. 150–450 sq.ft",
+  "year": "2025",
+  "gallery": []
+}, { "id": "interior-02", "title": "Bedroom Interior", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_02_bedroom.jpeg", "alt": "Bedroom Interior — Trinity Builders and Developers", "desc": "A calm bedroom composition focused on proportion, soft lighting, storage integration and a restrained contemporary finish.", "features": ["Layered ceiling lighting", "Integrated storage", "Quiet material palette", "Clean spatial planning"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] }, { "id": "interior-03", "title": "Kitchen Interior 01", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_03_kitchen.jpeg", "alt": "Kitchen Interior 01 — Trinity Builders and Developers", "desc": "A contemporary kitchen arranged around efficient work zones, dark cabinetry and a clear visual hierarchy.", "features": ["Functional work zones", "Dark cabinetry", "Central island", "Minimal visual clutter"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] }, { "id": "interior-04", "title": "Entrance Interior", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_04_entrance.jpeg", "alt": "Entrance Interior — Trinity Builders and Developers", "desc": "A compact entrance composition using timber, textured surfaces and planting to create a warm transition into the home.", "features": ["Timber detailing", "Textured wall finish", "Layered lighting", "Indoor planting"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] }, { "id": "interior-05", "title": "Kitchen Interior 02", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_05_kitchen.jpeg", "alt": "Kitchen Interior 02 — Trinity Builders and Developers", "desc": "A streamlined kitchen with a strong black-and-white palette, generous work surfaces and integrated storage.", "features": ["Monochrome palette", "Integrated cabinetry", "Worktop continuity", "Practical storage"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] }, { "id": "interior-06", "title": "Living Area", "cat": "interiors", "tag": "Interior", "img": "images/projects/interior_06_living.jpeg", "alt": "Living Area — Trinity Builders and Developers", "desc": "A contemporary living space balancing open views, layered lighting and textured feature surfaces.", "features": ["Open living layout", "Feature wall treatment", "Layered lighting", "Visual connection to outdoors"], "scope": "Interior design & finishing", "location": "Kerala", "area": "Approx. 150–450 sq.ft", "year": "2024–2026", "gallery": [] },
+     
+{
+  "id": "landscape-06",
+  "title": "Residence Outdoor",
+  "cat": "landscape",
+  "tag": "Landscape & Outdoor",
+  "img": "images/projects/landscape_06.png",
+  "alt": "Residence outdoor landscape and boundary wall — Trinity Builders and Developers",
+  "desc": "A residential outdoor setting featuring a landscaped approach, custom boundary wall, entrance gate and integrated exterior detailing.",
+  "features": [
+    "Landscaped approach",
+    "Custom boundary wall",
+    "Entrance gate",
+    "Outdoor paving"
+  ],
+  "scope": "Landscape & outdoor works",
+  "location": "Kerala",
+  "area": "Residential exterior",
+  "year": "2025",
+  "gallery": []
+}, { "id": "landscape-01", "title": "Garden & Landscape", "cat": "landscape", "tag": "Landscape & Outdoor", "img": "images/projects/landscape_01_garden.jpeg", "alt": "Garden & Landscape — Trinity Builders and Developers", "desc": "A structured garden edge that softens the built environment and strengthens the approach to the home.", "features": ["Layered planting", "Defined garden edges", "Visual screening", "Outdoor character"], "scope": "Landscape & outdoor works", "location": "Kerala", "area": "Site-specific", "year": "2024–2026", "gallery": [] }, { "id": "landscape-02", "title": "Paved Approach", "cat": "landscape", "tag": "Landscape & Outdoor", "img": "images/projects/landscape_02_paving.jpeg", "alt": "Paved Approach — Trinity Builders and Developers", "desc": "A practical paved surface designed to organize movement around the property while keeping the setting visually calm.", "features": ["Paving layout", "Movement and access", "Boundary relationship", "Low-maintenance finish"], "scope": "Landscape & outdoor works", "location": "Kerala", "area": "Site-specific", "year": "2024–2026", "gallery": [] }, { "id": "landscape-03", "title": "Outdoor Sculpture", "cat": "landscape", "tag": "Landscape & Outdoor", "img": "images/projects/landscape_03_sculpture.jpeg", "alt": "Outdoor Sculpture — Trinity Builders and Developers", "desc": "A sculptural outdoor element used as a visual accent within the landscape setting.", "features": ["Sculptural focal point", "Landscape placement", "Visual balance", "Outdoor detailing"], "scope": "Landscape & outdoor works", "location": "Kerala", "area": "Site-specific", "year": "2024–2026", "gallery": [] }, { "id": "landscape-04", "title": "Landscape Feature", "cat": "landscape", "tag": "Landscape & Outdoor", "img": "images/projects/landscape_04_feature.jpeg", "alt": "Landscape Feature — Trinity Builders and Developers", "desc": "A small landscape detail showing how texture, planting and site elements can be composed around the built form.", "features": ["Texture and planting", "Site detailing", "Material contrast", "Visual framing"], "scope": "Landscape & outdoor works", "location": "Kerala", "area": "Site-specific", "year": "2024–2026", "gallery": [] }, { "id": "landscape-05", "title": "Decorative Outdoor Feature", "cat": "landscape", "tag": "Landscape & Outdoor", "img": "images/projects/landscape_05_decorative.jpeg", "alt": "Decorative Outdoor Feature — Trinity Builders and Developers", "desc": "A decorative outdoor element integrated as part of the property's external character.", "features": ["Decorative detailing", "Outdoor placement", "Material character", "Landscape integration"], "scope": "Landscape & outdoor works", "location": "Kerala", "area": "Site-specific", "year": "2024–2026", "gallery": [] },
+{
+  id: "construction-01",
+  title: "",
+  cat: "construction",
+  tag: "Construction",
+  img: "images/projects/construction_01.jpeg",
+  alt: "Construction site progress",
+  desc: "",
+  features: [],
+  scope: "",
+  location: "",
+  area: "",
+  year: "",
+  gallery: []
+},
+
+{
+  id: "construction-02",
+  title: "",
+  cat: "construction",
+  tag: "Construction",
+  img: "images/projects/construction_02.jpeg",
+  alt: "Construction site progress",
+  desc: "",
+  features: [],
+  scope: "",
+  location: "",
+  area: "",
+  year: "",
+  gallery: []
+},
+
+{
+  id: "construction-03",
+  title: "",
+  cat: "construction",
+  tag: "Construction",
+  img: "images/projects/construction_03.jpeg",
+  alt: "Construction site progress",
+  desc: "",
+  features: [],
+  scope: "",
+  location: "",
+  area: "",
+  year: "",
+  gallery: []
+},
+
+{
+  id: "construction-04",
+  title: "",
+  cat: "construction",
+  tag: "Construction",
+  img: "images/projects/construction_04.jpeg",
+  alt: "Construction site progress",
+  desc: "",
+  features: [],
+  scope: "",
+  location: "",
+  area: "",
+  year: "",
+  gallery: []
+},];
+    const SERVICES = [
+      ["01", "Residential construction", "Single and multi-storey homes, built from your architect's drawings or ours."],
+      ["02", "Villa projects", "Larger plots, layered outdoor space, and finishes specified line by line."],
+      ["03", "Commercial buildings", "Shops, offices and mixed-use blocks — shell and core or fully finished."],
+      ["04", "Renovation & restoration", "Structural repair, extensions and services upgrades to existing houses."],
+      ["05", "Interiors & finishing", "Carpentry, flooring, painting and fittings coordinated with the site programme."],
+      ["06", "Turnkey delivery", "Drawings, approvals coordination, construction and handover under one contract."]
+    ];
+
+    /* ---------------- build DOM ---------------- */
+    $("#slats").innerHTML = HERO.map(src => `<div class="slat"><div class="in rel"><div class="ph"><img alt="" data-src="${src}"></div></div></div>`).join("");
+    $("#bsRail").innerHTML = STAGES.map(() => "<i></i>").join("");
+    $("#srv").innerHTML = SERVICES.map(([n, t, d]) => `<div class="srv-i up"><span class="n">${n}</span>
+  <div><h3 class="h3">${t}</h3><p>${d}</p></div><span class="plus"></span></div>`).join("");
+
+    /* word-split the statement */
+    $("#stmt").innerHTML = $("#stmt").textContent.trim().split(/\s+/).map(w => `<b>${w}</b>`).join(" ");
+
+    /* images + fallback */
+    $$("img[data-src]").forEach(im => {
+      im.addEventListener("error", () => im.closest(".ph")?.classList.add("miss"), { once: true });
+      im.src = im.dataset.src;
+    });
+
+    /* ---------------- motion setup ---------------- */
+    const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (REDUCE) document.body.classList.add("reduce");
+    gsap.registerPlugin(ScrollTrigger);
+
+    let lenis = null;
+    if (!REDUCE && window.Lenis) {
+      lenis = new Lenis({ duration: 1.05, lerp: .085, smoothWheel: true });
+      lenis.on("scroll", ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000));
+      gsap.ticker.lagSmoothing(0);
+    }
+    const goTo = el => lenis ? lenis.scrollTo(el, { offset: -1 }) : el.scrollIntoView({ behavior: "smooth" });
+    $$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+      const el = document.querySelector(a.getAttribute("href")); if (!el) return;
+      e.preventDefault(); closeMenu(); goTo(el);
+    }));
+
+    /* ---------------- hero slats intro ---------------- */
+    function intro() {
+      gsap.timeline()
+        .from(".slat", { yPercent: 104, duration: 1.25, stagger: .09, ease: "expo.out" })
+        .from(".slat img", { scale: 1.24, duration: 1.5, stagger: .09, ease: "expo.out" }, "<")
+        .from("#hero .mask>span", { yPercent: 112, duration: 1.1, stagger: .09, ease: "expo.out" }, "-=1")
+        .to("#hero .up", { opacity: 1, y: 0, duration: .8, stagger: .08 }, "-=.75");
+    }
+    if (!REDUCE) intro();
+
+    /* hero: slats part on scroll */
+    if (!REDUCE) {
+      gsap.to(".slat", {
+        yPercent: (i) => i % 2 ? -102 : 102, ease: "power2.in", stagger: { each: .05, from: "center" },
+        scrollTrigger: { trigger: "#hero", start: "top top", end: "bottom top", scrub: .5 }
+      });
+      gsap.to(".hero-body", {
+        y: -70, opacity: 0, ease: "none",
+        scrollTrigger: { trigger: "#hero", start: "top top", end: "60% top", scrub: .5 }
+      });
+    }
+
+    /* ---------------- statement: word illumination ---------------- */
+    if (!REDUCE) {
+      const words = $$("#stmt b");
+      gsap.to(words, {
+        color: "#110F0D", stagger: .06, ease: "none",
+        scrollTrigger: { trigger: "#stmt", start: "top 78%", end: "bottom 58%", scrub: .4 }
+      });
+    } else { $$("#stmt b").forEach(b => b.classList.add("on")); }
+
+    /* ---------------- BUILD SEQUENCE ---------------- */
+    (function () {
+      const groups = $$("#build [data-g]"), n = STAGES.length, rail = $$("#bsRail i");
+      gsap.set(groups, { opacity: 0, y: 26 });
+      gsap.set(groups[0], { opacity: 1, y: 0 });
+      rail[0].classList.add("on");
+
+      let cur = 0;
+      function paint(i) {
+        if (i === cur) return;
+        const s = STAGES[i];
+        gsap.timeline()
+          .to("#bsSwap", { opacity: 0, y: -14, duration: .28, ease: "power2.in" })
+          .add(() => { $("#bsK").textContent = s.k; $("#bsT").textContent = s.t; $("#bsD").textContent = s.d; $("#bsNow").textContent = String(i + 1).padStart(2, "0"); })
+          .fromTo("#bsSwap", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .42, ease: "power2.out" });
+        rail.forEach((r, k) => r.classList.toggle("on", k <= i));
+        groups.forEach((g, k) => {
+          g.classList.toggle("hot", k === i);
+          gsap.to(g, { opacity: k <= i ? 1 : 0, y: k <= i ? 0 : 26, duration: .55, ease: "power2.out" });
+        });
+        cur = i;
+      }
+
+      if (REDUCE) { groups.forEach(g => gsap.set(g, { opacity: 1, y: 0 })); return; }
+
+      ScrollTrigger.create({
+        trigger: "#build", start: "top top", end: () => "+=" + (window.innerHeight * (n - 1) * .9),
+        pin: "#bstage", scrub: .4, invalidateOnRefresh: true,
+        snap: { snapTo: 1 / (n - 1), duration: { min: .15, max: .4 }, delay: .04, ease: "power1.inOut" },
+        onUpdate(s) { paint(Math.min(n - 1, Math.round(s.progress * (n - 1)))); }
+      });
+    })();
+
+    /* ---------------- PROJECTS SHOWCASE & FILTERING ---------------- */
+    let currentCategory = "concepts";
+
+    function renderProjects(category = "concepts") {
+      const track = $("#projTrack");
+      const filtered = PROJECTS.filter(p => p.cat === category);
+      track.innerHTML = filtered.map((p, idx) => `
+        <article class="proj-card" data-id="${p.id}" data-idx="${PROJECTS.indexOf(p)}" tabindex="0" role="button" aria-label="Explore ${p.title}">
+          <div class="im-wrap" style="--project-image: url('${p.img}')">
+           
+            <div class="ph"><img class="${p.imageClass || ''}" src="${p.img}" alt="${p.alt}" loading="lazy" decoding="async"></div>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="mono dim" style="font-size:.6rem;margin-bottom:6px">Trinity Portfolio · ${p.tag}</div>
+              <h3 class="card-title">${p.title}</h3>
+              <p style="font-size:.88rem;opacity:.78;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${p.desc}</p>
+            </div>
+            <div class="card-meta">
+              <span>${p.location} · ${p.year}</span>
+              <span class="view-link">Explore Architecture →</span>
+            </div>
+          </div>
+        </article>`).join("");
+        // RESET HORIZONTAL SCROLL WHEN CATEGORY CHANGES
+      const viewport = $("#projViewport");
+        if (viewport) {
+          viewport.scrollLeft = 0;
+        }
+
+      $$(".proj-card", track).forEach(card => {
+        const activate = () => openModal(+card.dataset.idx);
+        card.addEventListener("click", activate);
+        card.addEventListener("keydown", e => { if ((e.key === "Enter" || e.key === " ") && !hasDragged) { e.preventDefault(); activate(); } });
+      });
+      $$("img", track).forEach(im => im.addEventListener("error", () => im.closest(".ph")?.classList.add("miss"), { once: true }));
+      if (!REDUCE) gsap.fromTo($$(".proj-card", track), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: .5, stagger: .045, ease: "power2.out" });
+    }
+
+    // Initial render
+    renderProjects("residences");
+
+    // Category Filter Tabs
+    $$("#projCats .cat-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const cat = btn.dataset.cat;
+        if (cat === currentCategory) return;
+
+        $$("#projCats .cat-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+        btn.classList.add("active");
+        btn.setAttribute("aria-selected", "true");
+        currentCategory = cat;
+
+        // Smooth transition
+        gsap.to("#projTrack", {
+          opacity: 0,
+          duration: 0.2,
+          onComplete() {
+            renderProjects(cat);
+            gsap.to("#projTrack", { opacity: 1, duration: 0.3 });
+          }
+        });
+      });
+    });
+
+    // Horizontal Track Scroll Buttons & Drag support
+    const projViewport = $("#projViewport");
+    const projTrack = $("#projTrack");
+
+    // Make viewport natively scrollable for touch & drag
+    projViewport.style.overflowX = "auto";
+    projViewport.style.cursor = "grab";
+    projViewport.style.webkitOverflowScrolling = "touch"; // smooth iOS momentum
+    // Hide scrollbar but keep scroll functionality
+    projViewport.style.scrollbarWidth = "none"; // Firefox
+    projViewport.style.msOverflowStyle = "none"; // IE/Edge
+
+    $("#projNext")?.addEventListener("click", () => {
+      projViewport.scrollBy({ left: 450, behavior: "smooth" });
+    });
+
+    $("#projPrev")?.addEventListener("click", () => {
+      projViewport.scrollBy({ left: -450, behavior: "smooth" });
+    });
+
+    // Mouse drag to scroll (desktop)
+    let isDragging = false, dragStartX = 0, dragScrollLeft = 0, hasDragged = false;
+
+    projViewport.addEventListener("mousedown", (e) => {
+      isDragging = true;
+      hasDragged = false;
+      dragStartX = e.pageX - projViewport.offsetLeft;
+      dragScrollLeft = projViewport.scrollLeft;
+      projViewport.style.cursor = "grabbing";
+      projViewport.style.userSelect = "none";
+    });
+
+    projViewport.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - projViewport.offsetLeft;
+      const walk = (x - dragStartX) * 1.5; // speed multiplier
+      if (Math.abs(walk) > 5) hasDragged = true;
+      projViewport.scrollLeft = dragScrollLeft - walk;
+    });
+
+    projViewport.addEventListener("mouseup", () => {
+      isDragging = false;
+      projViewport.style.cursor = "grab";
+      projViewport.style.userSelect = "";
+    });
+
+    projViewport.addEventListener("mouseleave", () => {
+      isDragging = false;
+      projViewport.style.cursor = "grab";
+      projViewport.style.userSelect = "";
+    });
+
+    // Prevent card click when dragging
+    projViewport.addEventListener("click", (e) => {
+      if (hasDragged) {
+        e.stopPropagation();
+        e.preventDefault();
+        hasDragged = false;
+      }
+    }, true);
+
+    // Touch/Scroll wheel horizontal interaction on viewport
+    projViewport.addEventListener("wheel", (e) => {
+      if (Math.abs(e.deltaX) < Math.abs(e.deltaY) && Math.abs(e.deltaY) > 20) {
+        // allow vertical scroll unless explicitly shift-scrolling
+        return;
+      }
+    }, { passive: true });
+
+    /* ---------------- generic reveals ---------------- */
+    if (!REDUCE) {
+      $$("section:not(#hero) .mask").forEach(m => gsap.from(m.querySelector("span"), {
+        yPercent: 112, duration: 1, ease: "expo.out",
+        scrollTrigger: { trigger: m, start: "top 90%" }
+      }));
+      $$(".up").forEach(el => gsap.to(el, {
+        opacity: 1, y: 0, duration: .8, ease: "power2.out",
+        scrollTrigger: { trigger: el, start: "top 92%" }
+      }));
+      gsap.to("#fq .mask>span", {
+        opacity: 1, stagger: .12, ease: "none",
+        scrollTrigger: { trigger: "#fq", start: "top 82%", end: "bottom 62%", scrub: .4 }
+      });
+      gsap.fromTo("#fmark", { xPercent: 6 }, {
+        xPercent: -6, ease: "none",
+        scrollTrigger: { trigger: "footer", start: "top bottom", end: "bottom bottom", scrub: .6 }
+      });
+      $$(".fig").forEach((f, i) => gsap.from(f, {
+        yPercent: 14, opacity: 0, duration: .7, delay: i * .06, ease: "power2.out",
+        scrollTrigger: { trigger: "#figures", start: "top 82%" }
+      }));
+    } else { gsap.set("#fq .mask>span", { opacity: 1 }); }
+
+    /* ---------------- nav ---------------- */
+    const nav = $("#nav"); let last = 0;
+    ScrollTrigger.create({
+      start: 0, end: 99999, onUpdate(s) {
+        const y = s.scroll();
+        nav.classList.toggle("solid", y > 50);
+        nav.classList.toggle("hide", y > last && y > 340 && !document.body.classList.contains("open"));
+        last = y;
+      }
+    });
+    ["#hero", "#build", "#founder", "footer"].forEach(sel => ScrollTrigger.create({
+      trigger: sel, start: "top 58px", end: "bottom 58px", onToggle: s => nav.classList.toggle("dark", s.isActive)
+    }));
+
+    const burger = $("#burger");
+    function closeMenu() { document.body.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); lenis && lenis.start(); }
+    burger.addEventListener("click", () => {
+      const o = document.body.classList.toggle("open");
+      burger.setAttribute("aria-expanded", o); o ? lenis && lenis.stop() : lenis && lenis.start();
+      $$("#menu a").forEach((a, i) => a.style.transitionDelay = (o ? .2 + i * .05 : 0) + "s");
+    });
+    addEventListener("keydown", e => { if (e.key === "Escape") { closeMenu(); closeModal(); } });
+
+    /* ---------------- MODAL DETAIL EXPERIENCE ---------------- */
+    const modal = $("#modal");
+
+    function getHighlightData(h) {
+      const norm = h.toLowerCase();
+
+      if (norm.includes("volume") || norm.includes("massing") || norm.includes("composition") || norm.includes("proportion")) {
+        return {
+          title: h,
+          desc: "Dynamic form with depth and rhythm",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>`
+        };
+      }
+
+      if (norm.includes("opening") || norm.includes("light") || norm.includes("daylight")) {
+        return {
+          title: h.replace(/\band\b/i, "&"),
+          desc: "Strategic openings for light and ventilation",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
+        };
+      }
+
+      if (norm.includes("landscape") || norm.includes("nature") || norm.includes("planting") || norm.includes("outdoor") || norm.includes("garden") || norm.includes("paving") || norm.includes("approach")) {
+        return {
+          title: h,
+          desc: "Seamless connection with nature",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 22H2M12 2v20M12 7c2-3 6-3 6-3s0 4-3 6M12 11c-2-3-6-3-6-3s0 4 3 6"/></svg>`
+        };
+      }
+
+      if (norm.includes("exterior") || norm.includes("facade") || norm.includes("character") || norm.includes("presence") || norm.includes("theme") || norm.includes("sculpture")) {
+        return {
+          title: h,
+          desc: "Material harmony and timeless expression",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>`
+        };
+      }
+
+      if (norm.includes("material") || norm.includes("detail") || norm.includes("timber") || norm.includes("finish") || norm.includes("cabinetry") || norm.includes("furniture") || norm.includes("storage") || norm.includes("planning") || norm.includes("balcony")) {
+        return {
+          title: h,
+          desc: "Carefully structured details and premium materials",
+          icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V2M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`
+        };
+      }
+
+      return {
+        title: h,
+        desc: "Thoughtful architectural design elements",
+        icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2z"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`
+      };
+    }
+
+    function openModal(i) {
+      const p = PROJECTS[i];
+      if (!p) return;
+      const ph = $("#mImg").closest(".ph");
+      ph.classList.remove("miss");
+      $("#mImg").onerror = () => ph.classList.add("miss");
+      $("#mImg").src = p.img;
+      $("#mImg").alt = p.alt;
+      $("#modal .mi").style.setProperty("--modal-image", `url("${p.img}")`);
+      $("#mTag").textContent = `${p.tag} · ${p.location}`;
+      $("#mTitle").textContent = p.title;
+      $("#mDesc").textContent = p.desc;
+
+      const thumbs = $("#mThumbs");
+      thumbs.innerHTML = (p.gallery || []).map((g, idx) => `<button class="modal-thumb-btn" type="button" aria-label="View additional project image ${idx + 1}"><img class="modal-thumb" src="${g}" alt="${p.title} — additional view ${idx + 1}" data-src="${g}"></button>`).join("");
+      $$(".modal-thumb-btn", thumbs).forEach(btn => btn.addEventListener("click", () => {
+        ph.classList.remove("miss");
+        const nextSrc = $("img", btn).dataset.src;
+        $("#mImg").src = nextSrc;
+        $("#mImg").alt = `${p.title} — additional view`;
+        $("#modal .mi").style.setProperty("--modal-image", `url("${nextSrc}")`);
+      }));
+
+      $("#mHighlights").innerHTML = p.features.map(h => {
+        const data = getHighlightData(h);
+        return `
+          <li>
+            <div class="highlight-icon-circle">
+              ${data.icon}
+            </div>
+            <div class="highlight-text">
+              <span class="highlight-title">${data.title}</span>
+              <span class="highlight-desc">${data.desc}</span>
+            </div>
+          </li>`;
+      }).join("");
+
+      $("#mSpec").innerHTML = `
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Location</dt>
+            <dd>${p.location}</dd>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="9" y1="16" x2="15" y2="16"/><path d="M8 6h2v2H8V6zm4 0h2v2h-2V6zm4 0h2v2h-2V6zm-8 4h2v2H8v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2z"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Built-up Area</dt>
+            <dd>${p.area}</dd>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Year</dt>
+            <dd>${p.year}</dd>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Type</dt>
+            <dd>${p.tag}</dd>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Scope</dt>
+            <dd>${p.scope}</dd>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+          </div>
+          <div class="spec-text">
+            <dt>Focus</dt>
+            <dd>${p.features.slice(0, 2).join(" · ")}</dd>
+          </div>
+        </div>`;
+
+      modal.setAttribute("aria-label", `${p.title} — project details`);
+      modal.classList.add("on");
+      requestAnimationFrame(() => modal.classList.add("in"));
+      lenis && lenis.stop();
+      $(".close", modal).focus();
+    }
+
+    function closeModal() {
+      if (!modal.classList.contains("on")) return;
+      modal.classList.remove("in");
+      setTimeout(() => modal.classList.remove("on"), 640);
+      lenis && lenis.start();
+    }
+    $$("[data-close]").forEach(el => el.addEventListener("click", closeModal));
+
+    /* ---------------- form ---------------- */
+    $("#form").addEventListener("submit", async e => {
+      e.preventDefault(); let ok = true;
+      const chk = (id, fn) => {
+        const el = $(id), f = el.closest(".field"), good = fn(el.value.trim());
+        f.classList.toggle("bad", !good); if (!good) ok = false;
+      };
+      chk("#f1", v => v.length > 1); chk("#f2", v => /^\d{10}$/.test(v.replace(/\D/g, "")));
+      chk("#f3", v => v.length > 1); chk("#f4", v => v !== ""); chk("#f5", v => v.length > 4);
+      if (!ok) { $(".field.bad")?.querySelector("input,select,textarea")?.focus(); return; }
+      const submitButton = e.submitter;
+      const submitLabel = submitButton.querySelector("span");
+      const originalLabel = submitLabel.textContent;
+      submitButton.disabled = true;
+      submitLabel.textContent = "Sending...";
+      const formData = new FormData();
+      formData.append("name", $("#f1").value.trim());
+      formData.append("email", $("#fEmail").value.trim());
+      formData.append("phone", $("#f2").value.trim());
+      formData.append("message", $("#f5").value.trim());
+      try {
+        const response = await fetch("/contact", { method: "POST", body: formData });
+        if (!response.ok) throw new Error("Contact submission failed");
+        gsap.to("#form", {
+          opacity: 0, y: -12, duration: .4, onComplete() {
+            $("#form").style.display = "none"; $("#sent").classList.add("on");
+            gsap.from("#sent", { opacity: 0, y: 16, duration: .55 }); ScrollTrigger.refresh();
+          }
+        });
+      } catch {
+        submitButton.disabled = false;
+        submitLabel.textContent = originalLabel;
+      }
+    });
+    $$(".field input,.field select,.field textarea").forEach(el =>
+      el.addEventListener("input", () => el.closest(".field").classList.remove("bad")));
+
+    /* ---------------- cursor ---------------- */
+    (function () {
+      const c = $("#cur"); let x = 0, y = 0, tx = 0, ty = 0;
+      addEventListener("mousemove", e => { tx = e.clientX; ty = e.clientY });
+      gsap.ticker.add(() => { x += (tx - x) * .2; y += (ty - y) * .2; c.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)` });
+      $$("a,button,.srv-i").forEach(el => {
+        el.addEventListener("mouseenter", () => { c.style.width = "32px"; c.style.height = "32px" });
+        el.addEventListener("mouseleave", () => { c.style.width = "8px"; c.style.height = "8px" });
+      });
+    })();
+
+    addEventListener("load", () => ScrollTrigger.refresh());
+  
+
+    /* ================= PLAN YOUR HOME ================= */
+    (() => {
+      const state = { floors: "Single", package: "Essential" };
+      const selectGroup = (id, key) => {
+        const group = document.getElementById(id);
+        group.addEventListener("click", event => {
+          const button = event.target.closest("button");
+          if (!button) return;
+          group.querySelectorAll("button").forEach(item => item.setAttribute("aria-pressed", item === button));
+          state[key] = button.dataset.value;
+        });
+      };
+      selectGroup("planFloors", "floors");
+      selectGroup("planPackage", "package");
+
+      const otherCheck = document.getElementById("planOtherCheck");
+      const otherText = document.getElementById("planOtherText");
+      otherCheck.addEventListener("change", () => {
+        otherText.classList.toggle("is-visible", otherCheck.checked);
+        if (otherCheck.checked) otherText.focus(); else otherText.value = "";
+      });
+
+      document.getElementById("planUse").addEventListener("click", () => {
+        const area = document.getElementById("planArea").value.trim();
+        const selected = [...document.querySelectorAll("#planExtras input:checked")]
+          .map(input => input.value === "Other requirements" && otherText.value.trim()
+            ? `Other requirements: ${otherText.value.trim()}` : input.value);
+        document.getElementById("f5").value = `Project outline from the Plan Your Home section:\n• Built-up area: ${area ? `${area} sq ft` : "Not specified"}\n• Floors: ${state.floors}\n• Finish package: ${state.package}\n• Optional requirements: ${selected.length ? selected.join(", ") : "None selected"}\n\n`;
+      });
+    })();
+
+  </script>
+  <a class="whatsapp-float" href="https://wa.me/919745848709?text=Hello%20Trinity%20Builders%2C%20I'm%20interested%20in%20your%20construction%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with Trinity Builders on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11.1 19.8L3 29l6.4-1.7A13 13 0 1 0 16 3Zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.8 1 1-3.7-.2-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.2l-.8 1c-.1.2-.3.2-.5.1-1.2-.6-2-1.1-2.8-2.6-.2-.3.2-.3.7-1.1.1-.2.1-.4 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3.7.3 1.2.4 1.7.5.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3Z"/></svg>
+  </a>
+</body>
+
+</html>
